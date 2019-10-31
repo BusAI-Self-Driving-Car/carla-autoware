@@ -19,5 +19,6 @@
     <arg name='role_name' value='$(arg role_name)'/>
   </include>
 
-</launch>
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(env CARLA_AUTOWARE_ROOT)/default.rviz"/>
 
+</launch>

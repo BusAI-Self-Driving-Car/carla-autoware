@@ -11,5 +11,6 @@
 
   <include file="$(env CARLA_AUTOWARE_ROOT)/autoware.launch"/>
 
-</launch>
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(env CARLA_AUTOWARE_ROOT)/default.rviz"/>
 
+</launch>
